@@ -1,0 +1,39 @@
+.set-password {
+  min-height: 100%;
+  background: #f0f0f0;
+  padding-top: 164rpx;
+  box-sizing: border-box;
+}
+.set-password .tip {
+  text-align: center;
+  font-size: 30rpx;
+  color: #666;
+}
+.set-password .password-wrapper {
+  margin-top: 47rpx;
+}
+.set-password .toggle-tip {
+  margin-top: 18rpx;
+  text-align: center;
+}
+.set-password .toggle-tip .tip {
+  font-size: 22rpx;
+  line-height: 22rpx;
+  color: #999;
+}
+.set-password .toggle-tip .active {
+  color: #087b46;
+}
+.set-password .btn-next {
+  margin: 138rpx auto 0;
+  width: 334rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  border-radius: 6rpx;
+  color: #fff;
+  background: #9e9e9e;
+}
+.set-password .btn-next-active {
+  background: #087b46;
+}

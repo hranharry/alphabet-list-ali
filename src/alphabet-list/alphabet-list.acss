@@ -1,0 +1,52 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10rpx 20rpx;
+}
+
+.alphabet-list .section-item .section-item-header {
+  display: flex;
+  align-items: center;
+  font-size: 22rpx;
+	color: #a8a8a8;
+  padding: 4rpx 20rpx;
+}
+
+.alphabet-list .section-item .section-item-cells {
+  padding:0 30rpx;
+	background-color: white;
+}
+.alphabet-list .section-item .section-item-cells text {
+  padding:0 30rpx;
+}
+.alphabet-list .section-item .section-item-cells .section-item-cell{
+  font-size: 30rpx;
+	line-height: 1.0;
+	color: #333333;
+  padding: 29rpx 0;
+}
+.border-bottom {
+  border-bottom: 1rpx solid #dbdbdb;
+}
+.alphabet-selector {
+  position: absolute;
+  top: 80px;
+  right: 0;
+  height: 432px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  box-sizing: border-box;
+}
+.alphabet-selector .selector-one {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+	color: #333333;
+  padding: 3px 3px;
+  height: 12px;
+}

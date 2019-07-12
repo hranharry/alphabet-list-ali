@@ -1,0 +1,25 @@
+{
+  "name": "alphabet-list-ali",
+  "version": "1.0.0",
+  "description": "支付宝小程序中支持字母筛选的列表的组件",
+  "main": "alphabet-list.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hranharry/alphabet-list-ali.git"
+  },
+  "keywords": [
+    "alipay",
+    "支付宝小程序",
+    "字母筛选列表",
+    "小程序组件"
+  ],
+  "author": "hranharry",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hranharry/alphabet-list-ali/issues"
+  },
+  "homepage": "https://github.com/hranharry/alphabet-list-ali#readme"
+}

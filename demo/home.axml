@@ -1,0 +1,3 @@
+<search-list showAlphabet="{{true}}" onChoose="handlerChosed" alphabetColor="#108ecc" list="{{bankList}}">
+  <text slot="header">以下为支持银行列表，绑定银行卡是为了xxx</text>
+</search-list>

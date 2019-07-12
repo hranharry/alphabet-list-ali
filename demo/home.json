@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "search-list": "../src/alphabet-list/alphabet-list"
+  }
+}
