@@ -1,26 +1,34 @@
-.header {
+.alphabet-in-container{
+  position: relative;
+  background-color: white;
+}
+.alphabet-in-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10rpx 20rpx;
+  width: 100%;
+  background-color: #f5f5f5;
 }
-
-.alphabet-list .section-item .section-item-header {
+.alphabet-in-scroll{
+  width: 700rpx;
+}
+.alphabet-in-list .section-item .section-item-header {
   display: flex;
   align-items: center;
   font-size: 22rpx;
 	color: #a8a8a8;
+  background-color: #f5f5f5;
   padding: 4rpx 20rpx;
 }
 
-.alphabet-list .section-item .section-item-cells {
-  padding:0 30rpx;
+.alphabet-in-list .section-item .section-item-cells {
+  padding-left: 30rpx;
 	background-color: white;
 }
-.alphabet-list .section-item .section-item-cells text {
+.alphabet-in-list .section-item .section-item-cells text {
   padding:0 30rpx;
 }
-.alphabet-list .section-item .section-item-cells .section-item-cell{
+.alphabet-in-list .section-item .section-item-cells .section-item-cell{
   font-size: 30rpx;
 	line-height: 1.0;
 	color: #333333;
@@ -29,16 +37,17 @@
 .border-bottom {
   border-bottom: 1rpx solid #eaeaea;
 }
-.alphabet-selector {
+.alphabet-in-selector {
   position: absolute;
-  top: 80px;
+  top: 5%;
   right: 0;
-  height: 432px;
+  width: 40rpx;
+  height: 90%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
-  z-index: 100;
+  justify-content: center;
+  z-index: 1000;
   box-sizing: border-box;
 }
 .alphabet-selector .selector-one {
@@ -48,5 +57,7 @@
   font-size: 12px;
 	color: #333333;
   padding: 3px 3px;
-  height: 12px;
+  height: 18px;
+  width: 100%;
+  box-sizing: border-box;
 }

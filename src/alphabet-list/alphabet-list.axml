@@ -1,10 +1,10 @@
-<view class="alphabet-container">
-  <view id="Top" class="header">
+<view class="alphabet-in-container">
+  <view id="Top" class="alphabet-in-header">
     <slot name="header" />
   </view>
-  <scroll-view class="alphabet-scroll" scroll-y style="height: {{scrollHeight}}" scroll-into-view="{{alpha}}">
-    <view class="alphabet">
-      <view class="alphabet-list">
+  <scroll-view class="alphabet-in-scroll" scroll-y style="height: {{scrollHeight}}" scroll-into-view="{{alpha}}">
+    <view class="alphabet-in">
+      <view class="alphabet-in-list">
         <view a:for="{{list}}" a:key="unique" id="{{item.key}}" class="section-item">
           <view class="section-item-header" a:if="{{showAlphabet}}">
             {{item.key}}
@@ -18,8 +18,8 @@
       </view>
     </view>
   </scroll-view>
-  <view id="alphabet-tab" data-id="selector" catchTouchStart="handlerAlphaTap" catchTouchMove="handlerMove" class="alphabet-selector">
-    <view data-ap="{{item.key}}" a:for="{{list}}" a:key="unique" class="selector-one" style="color: {{alphabetColor}}">
+  <view id="alphabet-in-tab" data-id="selector" catchTouchStart="handlerAlphaTap" catchTouchMove="handlerMove" class="alphabet-in-selector">
+    <view data-ap="{{item.key}}" data-index="{{index}}" a:for="{{list}}" a:key="unique" class="selector-one" style="color: {{alphabetColor}}; height: {{apHeight}}px;">
     {{item.key}}
     </view>
   </view>
