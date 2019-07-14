@@ -1,6 +1,6 @@
 {
   "name": "alphabet-list-ali",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "支付宝小程序中支持字母筛选的列表的组件",
   "main": "alphabet-list.js",
   "scripts": {
