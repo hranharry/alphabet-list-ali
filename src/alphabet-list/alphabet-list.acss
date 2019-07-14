@@ -27,7 +27,7 @@
   padding: 29rpx 0;
 }
 .border-bottom {
-  border-bottom: 1rpx solid #dbdbdb;
+  border-bottom: 1rpx solid #eaeaea;
 }
 .alphabet-selector {
   position: absolute;

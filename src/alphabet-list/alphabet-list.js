@@ -11,9 +11,10 @@ Component({
     showAlphabet: true,
     alphabetColor: '#333333',
     list: [],
+    apHeight: 18,
+    itemStyle: ''
   },
   didMount() {
-    console.log(this.props.list)
     try {
       my.createSelectorQuery()
         .select('#Top').boundingClientRect()
@@ -21,14 +22,10 @@ Component({
         .exec(res => {
           let sysInfo = my.getSystemInfoSync()
           if (res && res.length === 2 && this.props.list && this.props.list.length > 0) {
-            console.log(res)
             let offsetTop = res[0].height;
-            let apHeight = res[1].height / this.props.list.length;
             let apTabOffsetTop = res[1].top
-            console.log(sysInfo)
             this.setData({
               scrollHeight: sysInfo.windowHeight - offsetTop  + 'px',
-              apHeight: apHeight,
               apTabOffsetTop: apTabOffsetTop
             })
           }
@@ -41,7 +38,6 @@ Component({
   didUnmount() {},
   methods: {
     handlerAlphaTap(e) {
-      console.log(e)
       let {ap} = e.target.targetDataset;
       this.setData({alpha: ap});
     },
@@ -50,7 +46,7 @@ Component({
       let moveY = e.touches[0].clientY;
       let rY = moveY - this.data.apTabOffsetTop;
       if(rY >= 0) {
-        let index = Math.ceil((rY - this.data.apHeight)/ this.data.apHeight);
+        let index = Math.ceil((rY - this.props.apHeight)/ this.props.apHeight);
         if(0 <= index < list.length) {
           let nonwAp = list[index];
           nonwAp && this.setData({alpha: nonwAp.key});

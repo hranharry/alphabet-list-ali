@@ -10,8 +10,8 @@
             {{item.key}}
           </view>
           <view a:for="{{item.datas}}" a:key="unique" a:for-item="cell" a:for-index="cellIndex" class="section-item-cells">
-            <view class="section-item-cell {{cellIndex != (item.datas.length-1) ? 'border-bottom': showAlphabet ? '' : 'border-bottom'}}" data-item="{{cell}}" catchTap="onClickItem">
-              <text>{{item.dataKey ? cell[item.dataKey] : cell}}</text>
+            <view class="section-item-cell {{cellIndex != (item.datas.length-1) ? 'border-bottom': showAlphabet ? '' : 'border-bottom'}}" style="border-color: {{borderColor}}" data-item="{{cell}}" catchTap="onClickItem">
+              <text style="{{itemStyle}}">{{item.dataKey ? cell[item.dataKey] : cell}}</text>
             </view>
           </view>
         </view>

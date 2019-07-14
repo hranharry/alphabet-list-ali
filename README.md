@@ -6,6 +6,12 @@
 ```showAlphabet: Boolean```
 * 侧边栏导航颜色
 ```alphabetColor: Color```
+* 侧边栏字母高度
+```apHeight: Number,String```
+* item边框色
+```borderColor: Color```
+* item内容样式
+```itemStyle: String```
 * 列表
 ```list: Array```
     1. key: 侧边栏的名字
