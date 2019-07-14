@@ -28,7 +28,6 @@ Component({
             let headerOffsetTop = res[0].height;
             let scrollViewTop = res[1].top
             let apTabOffsetTop = res[2].top
-            console.log(res)
             this.setData({
               windowHeight: sysInfo.windowHeight,
               scrollHeight: sysInfo.windowHeight - headerOffsetTop  + 'px',
